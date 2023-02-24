@@ -191,26 +191,28 @@ body {
 	padding-right: 0.4rem;
 }
 
-/* Link Button */
+/* Button */
 
-.link-button {
-	display: block;
+.button {
 	background-image: linear-gradient(
 		var(--color-neutral-dark-gray-blue),
 		var(--color-neutral-dark-gray-blue)
 	);
 	color: var(--color-neutral-white);
-	text-decoration: none;
-	padding: 1em;
+	border: none;
 	border-radius: 32px;
+	font: inherit;
 	font-size: 1.1rem;
 	text-align: center;
 	position: relative;
+	width: 100%;
+	padding: 1em;
+	cursor: pointer;
 	z-index: 1;
 	overflow: hidden;
 }
 
-.link-button::before {
+.button::before {
 	content: '';
 	background-image: linear-gradient(
 		var(--color-gradient-light-slate-blue),
@@ -226,7 +228,7 @@ body {
 	transition: opacity 0.3s;
 }
 
-.link-button:hover::before {
+.button:hover::before {
 	opacity: 1;
 }
 
